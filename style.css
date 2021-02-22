@@ -1,0 +1,171 @@
+#topo.col-sm-12{
+   background-color: #343a41;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  height: 6vh;
+   
+}
+#texto{
+    color: white;
+    margin-left: 5px;
+}
+#localization{
+    color: white;
+    margin-bottom: 7.5px;
+}
+#entregador{
+    width: 30%;
+    margin-left: -2%;
+    margin-top: 2%;
+    border: 3px solid white;
+    
+}
+#entregador-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+    background-color: #ffa501;
+    height: 17vh;
+   
+}
+
+#phone,#mobile,#number,#number1{
+    color: white;
+}
+
+#info1,#info2{
+    background-color: #755d2c;
+    display: flex;
+    align-items: center; 
+    margin-left: 5%;
+    height: 4vh;
+    margin-top: 5%;
+     border-radius: 6px;
+}
+#info3{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    align-content: center;
+     border-radius: 10px;
+     background-color: white;
+     max-width: 260px;
+     margin-left: 5%;
+     margin-top: 3%;
+     overflow: hidden;
+     height: 6vh;
+}
+
+#phone,#mobile{
+    display: flex;
+    margin-right: 2%;
+    align-items: center; 
+    justify-content: center;
+    align-content: center;  
+    margin-left: 5%;
+} 
+.box-number{
+    display: flex;
+    align-items: center;
+    margin-left: 26%;
+    background-color: #bc8216;
+    height: 4vh;
+}
+.box-number1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: flex-end;
+    margin-left: 28.5%;
+    background-color: #bc8216;
+    height: 4vh;
+}
+#clock{
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #0d927a;
+    margin-bottom: 2px;
+    margin-top: 3%;
+}
+#open{
+    color: #0d927a;
+    margin-top: 5%;
+}
+#open2{
+   color: #74757c;
+   margin-top: -2%;
+}
+
+
+#select{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-select{
+    margin-top: 5%;
+    width: 90vw;
+    
+}
+
+
+#promotion{
+    text-decoration: underline;
+    color: #8b191b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+#snacks{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#burguer{
+    width: 45vw;
+    border: 1px solid #9aa2ab;
+}
+#price{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;   
+}
+#price-burguer{
+    color:red;
+    margin-left: 30%;
+    
+}
+#button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+#buy,#market-car{
+    width: 42vw;
+    
+}
+#buy{
+    margin-right: 1%;
+    background-color: #71b246;
+    border: #71b246;
+    margin-right: -10%;
+    font-weight: 700;
+}
+
+#market-car{
+    margin-left: 1%;
+    background-color: #f57b28;
+    border: #f57b28;
+    margin-left: 2%;
+    font-weight: 700;
+}
+
+/* 429x882 */

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile - Live Share</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12" id="topo">
+                        <i class="fas fa-map-marker-alt" id="localization"></i><h5 id="texto">Av. 1º de Maio, 3245 - Itanhaém/SP</h5>   
+                    </div>
+                    <!-- primeiro item -->
+                    <div class="col-sm-6" id="entregador-box">
+                        <img src="img/moto.jpg" alt="entregador" id="entregador"> 
+                        <!-- segundo item -->
+                        <div class="col-sm-6" id="contato">
+                            <div class="row" id="info1">
+                                <i class="fas fa-phone" id="phone"></i>
+                                <div class="box-number">
+                                <h5 id="number">13 4563-2334</h5>
+                                </div>
+                            </div>
+                            <div class="row" id="info2">
+                                <i class="fas fa-mobile-alt" id="mobile"></i>
+                                <div class="box-number1">
+                                <h5 id="number1">13 4563-2334</h5>
+                                </div>
+                            </div>
+                            <div class="row" id="info3">
+                                <i class="far fa-clock" id="clock"></i><h6 id="open">Estamos abertos</h6>
+                                <br>
+                                <h6 id="open2">Desde às 00h até às 23h59</h6>
+                            </div>
+                        </div>
+                    </div>
+            </div> 
+
+
+            <div class="row" id="select">
+                <!-- Formulário Select -->
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Lanches</option>
+                    <option value="1">X-Frango</option>
+                    <option value="2">X-Egg</option>
+                    <option value="3">X-Salada</option>
+                  </select>
+            </div>  
+
+
+            <div class="row">
+                <div class="col-sm-12" id="promoções">
+                    <h1 id="promotion">Promoções</h1>
+                </div>
+            </div>   
+
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-6">
+                        <div class="row" id="snacks">
+                            <img src="img/burguer.png" alt="burguer" id="burguer">
+                            <img src="img/burguer.png" alt="burguer" id="burguer">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12">
+                    <div class="col-sm-6">
+                        <div class="row" id="price">
+                            <div class="burguer1">
+                                <h5>Hambúrguer Grande</h5>
+                                <h4 id="price-burguer">R$22,00</h4>
+                                <input id="1" type="number" data-preco="22" data-id="1" value="0" onchange="calcularPreco($(this))">
+                            </div>
+                            <div class="burguer2">
+                                <h5>Hambúrguer Mini</h5>
+                                <h4 id="price-burguer">R$15,00</h4>
+                                <input id="2" type="number" data-preco="15" data-id="2" value="0" onchange="calcularPreco($(this))">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+                <div class="col-sm-12">
+                    <div class="col-sm-6">
+                        <div class="row" id="button">
+                            <button type="button" class="btn btn-primary btn-lg" id="buy"><i class="fas fa-dollar-sign"></i>Comprar</button>
+                            <button type="button" class="btn btn-secondary btn-lg" id="market-car" data-toggle="modal" data-target="#exampleModal" >
+                            <i class="fas fa-shopping-basket" id="market-text"></i>Carrinho</button>                              
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Carrinho</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Produto</th>
+                                        <th scope="col">Preço R$</th>
+                                        <th scope="col">Quantidade</th>
+                                        <th scope="col">SubTotal</th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Hambúrguer Grande</td>
+                                    <td>R$ 22,00</td>
+                                    <td><input id="1" type="number" data-preco="22" data-id="1" value="0" onchange="calcularPreco($(this))"></td>
+                                    <td id="sub1" data-sub="0">R$ 0,00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Hambúrguer Mini</td>
+                                    <td>R$ 15,00</td>
+                                    <td><input id="2" type="number" data-preco="15" data-id="2" value="0" onchange="calcularPreco($(this))"></td>
+                                    <td id="sub2" data-sub="0">R$ 0,00</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right" colspan="4">TOTAL:</td>
+                                    <td id="total">R$ 0,00</td>
+                                </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Finalizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
