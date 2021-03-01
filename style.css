@@ -17,6 +17,7 @@
 }
 #entregador{
     width: 30%;
+    /* margin-left: 10%; */
     margin-left: -2%;
     margin-top: 2%;
     border: 3px solid white;
@@ -70,6 +71,8 @@
 .box-number{
     display: flex;
     align-items: center;
+    /* justify-content: flex-end;
+    align-content: flex-end; */
     margin-left: 26%;
     background-color: #bc8216;
     height: 4vh;
@@ -102,7 +105,7 @@
    margin-top: -2%;
 }
 
-
+/* Formulário Select */
 #select{
     display: flex;
     align-items: center;
@@ -113,7 +116,7 @@
     width: 90vw;
     
 }
-
+/* Promoções Hambúrguer */
 
 #promotion{
     text-decoration: underline;
@@ -146,7 +149,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10%;
+    /* margin-right: 0; */
+    /* margin-top: 10%; */
 }
 #buy,#market-car{
     width: 42vw;
@@ -166,6 +170,44 @@
     border: #f57b28;
     margin-left: 2%;
     font-weight: 700;
+    margin-right: 20;
 }
+#close{
+    background-color: #71b246;
+    border: #71b246;
+    font-weight: 700;
 
+}
+#finish{
+    background-color: #f57b28;
+    border: #f57b28;
+    font-weight: 700;
+}
+#quantity{
+    padding: 12px;
+}
+.sizeconteiner{
+    width: 105px;
+}
+.sizebox{
+    width: 50px;
+}
+/* .modal-body{
+    margin-right: 2%;
+} */
+
+/* #number{
+    margin-left: 25%;
+    font-weight: bold;
+    display: flex;
+    align-content: center;
+    
+} */
+/* #number1{
+    margin-left: 27%;
+    font-weight: bold;
+    display: flex;
+    align-content: center;
+} */
 /* 429x882 */
+/* 410x881 */
